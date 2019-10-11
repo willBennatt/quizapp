@@ -1,0 +1,62 @@
+main {
+  padding: 20px 50px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.overlay {
+	width: 100%;
+	height: 100%;
+	color: #fff;
+	background: #e74c3c;
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin: 0;
+	z-index: 1000;
+	display: none;
+}
+
+div.feedback {
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  width: 300px;
+  height: 300px;
+  z-index: 1001;
+  background-color: lightgray;
+  text-align: center;
+}
+
+.container {
+  width: 47.5%;
+  height: 100%;
+  min-height: 200px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+ul.options {
+  list-style: none;
+}
+
+li {
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 30%;
+  background-color: #afdee4;
+  margin: 10px auto;
+}
+
+div.image-container {
+
+}
+
+img.mountain-img {
+  width: 100%;
+}
+
+div.question-container {
+  background-color: lightgray;
+}

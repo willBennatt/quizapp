@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>PNW Mountain Quiz</title>
+    <!-- Meta Tags -->
+    <meta charset="utf-8">
+    <meta name="description" content="A short quiz on the mountains of the PNW."/>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="main.css"/>
+    <!-- JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+  </head>
+  <body>
+    <!-- Overlay for showing feedback, instructions, and results -->
+    <div class="overlay"></div>
+    <!-- Feedback divs -->
+    <div id="correct" class="feedback">
+      Correct!<br>
+      <button type="button" class="next">Next</button>
+    </div>
+    <div id="incorrect" class="feedback">
+      Incorrect<br>
+      <button type="button" class="next">Next</button>
+    </div>
+    <!-- End of Quiz screen -->
+    <div id="end" class="feedback">
+      Finish! Your score was:<br>
+      <span id=score></span> out of <span id=possible></span><br>
+      <button type="button" id="new-game-button">New Game</button>
+    </div>
+    <!-- Main quiz content -->
+    <main>
+      <h1>PNW Mountain Quiz</h1>
+      <!-- Holds current mountain image -->
+      <div class="container image-container"></div>
+      <div class="container question-container">
+        <h3>What mountain is this?</h3>
+        <!-- holds current question options -->
+        <ul class="options">
+        </ul>
+        <button type="button" id="submit-button">Submit</button>
+      </div>
+    </main>
+  </body>
+</html>
