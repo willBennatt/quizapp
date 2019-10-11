@@ -12,7 +12,13 @@
     <script type="text/javascript" src="app.js"></script>
   </head>
   <body>
-    <!-- Overlay for showing feedback, instructions, and results -->
+    <!-- Background for intro and ending -->
+    <div class="intro-background"></div>
+    <div id="start-game" class="feedback">
+      <h1>Pacific Northwest Mountain Quiz</h1>
+      <button type="button" class="new-game-button">Start</button>
+    </div>
+    <!-- Overlay for showing feedback and instructions -->
     <div class="overlay"></div>
     <!-- Feedback divs -->
     <div id="correct" class="feedback">
@@ -27,7 +33,7 @@
     <div id="end" class="feedback">
       Finish! Your score was:<br>
       <span id=score></span> out of <span id=possible></span><br>
-      <button type="button" id="new-game-button">New Game</button>
+      <button type="button" class="new-game-button">New Game</button>
     </div>
     <!-- Main quiz content -->
     <main>

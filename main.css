@@ -5,17 +5,25 @@ main {
   text-align: center;
 }
 
-.overlay {
-	width: 100%;
+.intro-background, .overlay {
+  width: 100%;
 	height: 100%;
-	color: #fff;
-	background: #e74c3c;
-	position: absolute;
+  position: absolute;
 	top: 0;
 	left: 0;
 	margin: 0;
 	z-index: 1000;
 	display: none;
+}
+
+.intro-background {
+  background-image: url("images/north-cascades.jpg");
+  background-size: cover;
+}
+
+.overlay {
+	background-color: black;
+  opacity: 0.5;
 }
 
 div.feedback {
@@ -47,10 +55,6 @@ li {
   width: 30%;
   background-color: #afdee4;
   margin: 10px auto;
-}
-
-div.image-container {
-
 }
 
 img.mountain-img {

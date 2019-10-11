@@ -44,10 +44,22 @@ var currQuiz;
 
 /* Game play and event listeners */
 $(document).ready(function() {
-  currQuiz = Object.create(Quiz);
-  setQuiz();
+  intro();
   play();
 });
+
+function intro() {
+  $("div.feedback").hide();
+  $(".overlay").hide();
+  $(".intro-background").show();
+  $("#start-game").show();
+  $(".new-game-button").click(function(event) {
+    currQuiz = Object.create(Quiz);
+    setQuiz();
+    $("#start-game").hide();
+    $(".intro-background").fadeOut();
+  });
+}
 
 /* sets the game for the given quiz object */
 function setQuiz() {
@@ -69,7 +81,7 @@ function endQuiz() {
   $("#score").text(currQuiz.score);
   $("#possible").text(currQuiz.questions.length);
   $("#end").show();
-  $("#new-game-button").click(function(event) {
+  $(".new-game-button").click(function(event) {
     currQuiz = Object.create(Quiz);
     setQuiz(currQuiz);
   });
