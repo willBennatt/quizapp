@@ -14,26 +14,32 @@
   <body>
     <!-- Background for intro and ending -->
     <div class="intro-background"></div>
-    <div id="start-game" class="feedback">
+    <div id="start-game" class="message intro">
       <h1>Pacific Northwest Mountain Quiz</h1>
       <button type="button" class="new-game-button">Start</button>
     </div>
     <!-- Overlay for showing feedback and instructions -->
     <div class="overlay"></div>
     <!-- Feedback divs -->
-    <div id="correct" class="feedback">
-      Correct!<br>
-      <button type="button" class="next">Next</button>
+    <div id="correct" class="message feedback">
+      <div class="centered-text">
+        Correct!<br>
+        <button type="button" class="next">Next</button>
+      </div>
     </div>
-    <div id="incorrect" class="feedback">
-      Incorrect<br>
-      <button type="button" class="next">Next</button>
+    <div id="incorrect" class="message feedback">
+      <div class="centered-text">
+        Incorrect<br>
+        <button type="button" class="next">Next</button>
+      </div>
     </div>
     <!-- End of Quiz screen -->
-    <div id="end" class="feedback">
-      Finish! Your score was:<br>
-      <span id=score></span> out of <span id=possible></span><br>
-      <button type="button" class="new-game-button">New Game</button>
+    <div id="end" class="message intro">
+      <div class="centered-text">
+        Finish! Your score was:<br>
+        <span id=score></span> out of <span id=possible></span><br>
+        <button type="button" class="new-game-button">New Game</button>
+      </div>
     </div>
     <!-- Main quiz content -->
     <main>

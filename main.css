@@ -5,6 +5,14 @@ main {
   text-align: center;
 }
 
+button {
+  background-color: #637563;
+  color: white;
+  padding: 10px 32px;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
 .intro-background, .overlay {
   width: 100%;
 	height: 100%;
@@ -26,27 +34,55 @@ main {
   opacity: 0.5;
 }
 
-div.feedback {
+.message {
   position: absolute;
-  top: 30%;
-  left: 30%;
-  width: 300px;
-  height: 300px;
   z-index: 1001;
-  background-color: lightgray;
+  background-color: #198909;
   text-align: center;
+  border: 2px solid lightblue;
+  border-radius: 20px;
+  color: white;
+}
+
+.feedback {
+  top: 24%;
+  left: 35%;
+  width: 300px;
+  height: 200px;
+  font-size: 30px;
+}
+
+.intro {
+  top: 20%;
+  left: 30%;
+  width: 520px;
+  height: 300px;
+  font-size: 30px;
+  padding: 30px;
+}
+
+.centered-text {
+  position: relative;
+  top: 25%;
 }
 
 .container {
-  width: 47.5%;
+  width: 45%;
   height: 100%;
   min-height: 200px;
   display: inline-block;
   vertical-align: top;
+  margin-left: 7.5px;
+  margin-right: 7.5px;
+}
+
+h3 {
+  font-size: 18px;
 }
 
 ul.options {
   list-style: none;
+  padding: 0px;
 }
 
 li {
@@ -55,12 +91,27 @@ li {
   width: 30%;
   background-color: #afdee4;
   margin: 10px auto;
+  font-size: 16px;
+  padding: 5px 10px;
+}
+
+li:hover, button:hover {
+  cursor: pointer;
+}
+
+li:hover {
+  background-color: #7cdce8;
 }
 
 img.mountain-img {
   width: 100%;
+  border: 1px solid black;
+  border-radius: 7px;
 }
 
 div.question-container {
   background-color: lightgray;
+  border: 1px solid black;
+  border-radius: 7px;
+  padding-bottom: 15px;
 }

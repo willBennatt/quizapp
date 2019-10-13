@@ -49,7 +49,7 @@ $(document).ready(function() {
 });
 
 function intro() {
-  $("div.feedback").hide();
+  $(".message").hide();
   $(".overlay").hide();
   $(".intro-background").show();
   $("#start-game").show();
@@ -63,12 +63,12 @@ function intro() {
 
 /* sets the game for the given quiz object */
 function setQuiz() {
-  $("div.feedback").hide();
-  $("#end").hide();
+  $(".message").hide();
   $(".overlay").hide();
   $("div.image-container").empty();
   $("ul.options").empty();
   $("div.image-container").append("<img src='" + currQuiz.getCurrQuestion().image + "' class='mountain-img'>");
+  //$("div.image-container").css("background-image", "url('" + currQuiz.getCurrQuestion().image + "')");
   for (var i = 0; i < currQuiz.getCurrQuestion().options.length; i++) {
     $("ul.options").append("<li id='" + i + "'>" + currQuiz.getCurrQuestion().options[i] + "</li>\n");
   }
